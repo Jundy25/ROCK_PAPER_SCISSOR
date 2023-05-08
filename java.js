@@ -8,7 +8,7 @@ function rock(){
     let random = Math.round(Math.random() * 2);
     
     document.getElementById('pic2').style.display = 'none';
-    document.getElementById('load').style.display = flex;
+    document.getElementById('load').style.display = 'flex';
     
     
     setTimeout(()=> {
@@ -54,8 +54,8 @@ function paper(){
     let result = '';
     let random = Math.round(Math.random() * 2);
 
-    document.getElementById('pic2').style.display = none;
-    document.getElementById('load').style.display = flex;
+    document.getElementById('pic2').style.display = 'none';
+    document.getElementById('load').style.display = 'flex';
     
     if (random === 0){
         document.getElementById('load').style.display = 'none';
@@ -98,8 +98,8 @@ function scissor(){
     let result = '';
     let random = Math.round(Math.random() * 2);
 
-    document.getElementById('pic2').style.display = none;
-    document.getElementById('load').style.display = flex;
+    document.getElementById('pic2').style.display = 'none';
+    document.getElementById('load').style.display = 'flex';
     
     if (random === 0){
         document.getElementById('load').style.display = 'none';
