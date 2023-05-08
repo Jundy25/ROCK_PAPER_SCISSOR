@@ -10,6 +10,8 @@ function rock(){
     document.getElementById('pic2').style.display = none;
     document.getElementById('load').style.display = flex;
     
+    
+    setTimeout(()=> {
     if (random === 0){
         document.getElementById('load').style.display = 'none';
         document.getElementById().style.display = 'flex';
@@ -41,6 +43,7 @@ function rock(){
         document.getElementById('you').innerHTML = sy;
         },500);    
     }
+    },1000);
 }
 
 function paper(){
