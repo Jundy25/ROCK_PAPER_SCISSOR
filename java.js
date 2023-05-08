@@ -7,7 +7,7 @@ function rock(){
     pic.style.transform ='rotate(90deg)';
     let random = Math.round(Math.random() * 2);
     
-    document.getElementById('pic2').style.display = none;
+    document.getElementById('pic2').style.display = 'none';
     document.getElementById('load').style.display = flex;
     
     
