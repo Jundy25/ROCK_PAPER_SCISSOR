@@ -19,7 +19,7 @@ function rock(){
         pic2.style.transform = 'rotate(-90deg)';
         setTimeout(()=> {
         alert('Tie');
-        },500);
+        },300);
         
     }else if(random === 1){
         document.getElementById('load').style.display = 'none';
@@ -30,7 +30,7 @@ function rock(){
         setTimeout(()=> {
         alert('You Lose!');
         document.getElementById('ai').innerHTML = ay;
-        },500);
+        },300);
         
     }else if(random === 2){
         document.getElementById('load').style.display = 'none';
@@ -41,9 +41,9 @@ function rock(){
         setTimeout(()=> {
         alert('You Win!');
         document.getElementById('you').innerHTML = sy;
-        },500);    
+        },300);    
     }
-    },1000);
+    },700);
 }
 
 function paper(){
@@ -66,7 +66,7 @@ function paper(){
         setTimeout(()=> {
         alert('You Win!');
         document.getElementById('you').innerHTML = sy;
-        },500);
+        },300);
 
     }else if(random === 1){
         document.getElementById('load').style.display = 'none';
@@ -75,7 +75,7 @@ function paper(){
         pic2.style.transform = 'rotate(-90deg)';
         setTimeout(()=> {
         alert('Tie');
-        },500);
+        },300);
 
     }else if(random === 2){
         document.getElementById('load').style.display = 'none';
@@ -86,9 +86,9 @@ function paper(){
         setTimeout(()=> {
         alert('You Lose!');
         document.getElementById('ai').innerHTML = ay;
-        },500);
+        },300);
     }
-    },1000);
+    },700);
 }
 
 function scissor(){
@@ -111,7 +111,7 @@ function scissor(){
         setTimeout(()=> {
         alert('You Lose!');
         document.getElementById('ai').innerHTML = ay;
-        },500); 
+        },300); 
 
     }else if(random === 1){
         document.getElementById('load').style.display = 'none';
@@ -122,7 +122,7 @@ function scissor(){
         setTimeout(()=> {
         alert('You Win!');
         document.getElementById('you').innerHTML = sy;
-        },500);
+        },300);
 
     }else if(random === 2){
         document.getElementById('load').style.display = 'none';
@@ -131,7 +131,7 @@ function scissor(){
         pic2.style.transform = 'rotate(-90deg)';
         setTimeout(()=> {
         alert('Tie');
-        },500);
+        },300);
     }
-    },1000);
+    },700);
 }
