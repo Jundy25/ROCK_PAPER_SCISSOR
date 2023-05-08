@@ -14,7 +14,7 @@ function rock(){
     setTimeout(()=> {
     if (random === 0){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="rock2.png";
         pic2.style.transform = 'rotate(-90deg)';
         setTimeout(()=> {
@@ -23,7 +23,7 @@ function rock(){
         
     }else if(random === 1){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="paper2.png";
         pic2.style.transform = 'rotate(-90deg)';
         ay = ay + 1;
@@ -34,7 +34,7 @@ function rock(){
         
     }else if(random === 2){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="scissor2.png";
         pic2.style.transform = 'rotate(-90deg)';
         sy = sy + 1;
@@ -56,10 +56,10 @@ function paper(){
 
     document.getElementById('pic2').style.display = 'none';
     document.getElementById('load').style.display = 'flex';
-    
+    setTimeout(()=> {
     if (random === 0){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="rock2.png";
         pic2.style.transform = 'rotate(-90deg)';
         sy = sy + 1;
@@ -70,7 +70,7 @@ function paper(){
 
     }else if(random === 1){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="paper2.png";
         pic2.style.transform = 'rotate(-90deg)';
         setTimeout(()=> {
@@ -79,7 +79,7 @@ function paper(){
 
     }else if(random === 2){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="scissor2.png";
         pic2.style.transform = 'rotate(-90deg)';
         ay = ay + 1;
@@ -88,6 +88,7 @@ function paper(){
         document.getElementById('ai').innerHTML = ay;
         },500);
     }
+    },1000);
 }
 
 function scissor(){
@@ -100,10 +101,10 @@ function scissor(){
 
     document.getElementById('pic2').style.display = 'none';
     document.getElementById('load').style.display = 'flex';
-    
+    setTimeout(()=> {
     if (random === 0){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="rock2.png";
         pic2.style.transform = 'rotate(-90deg)';
         ay = ay + 1;
@@ -114,7 +115,7 @@ function scissor(){
 
     }else if(random === 1){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="paper2.png";
         pic2.style.transform = 'rotate(-90deg)';
         sy = sy + 1;
@@ -125,11 +126,12 @@ function scissor(){
 
     }else if(random === 2){
         document.getElementById('load').style.display = 'none';
-        document.getElementById().style.display = 'flex';
+        document.getElementById('pic2').style.display = 'flex';
         pic2.src="scissor2.png";
         pic2.style.transform = 'rotate(-90deg)';
         setTimeout(()=> {
         alert('Tie');
         },500);
     }
+    },1000);
 }
